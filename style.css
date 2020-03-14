@@ -32,7 +32,7 @@ header p{
 .pads > div{
     height: 100px;
     width: 100px;
-    flex: 1;
+    flex: 1 ;
 }
 
 .pad1{
@@ -48,8 +48,35 @@ header p{
     background: #d3d160;
 }
 .pad5{
- background: lightslategrey;
+ background: #778899;
 }
 .pad6{
-    background: aqua;
+    background: #00ffff;
 }
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
